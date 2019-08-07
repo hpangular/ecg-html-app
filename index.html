@@ -4,11 +4,11 @@
       <title>ECGAI</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="./assets/css/style.css">
       <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
       <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
       <!-- <script type="text/javascript" src="item.js"></script> -->
-      <script type="text/javascript" src="slider.js"></script>
+      <script type="text/javascript" src="./assets/js/slider.js"></script>
       
 
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
@@ -20,17 +20,34 @@
       <header id="header">
          <div class="container">
             <div class="logo float-left">
-               <h1 class="text-light"><a href="#intro" class="scrollto"><span>ECGAI</span></a></h1>
+               <h1 class="text-light"><a href="#intro" class="scrollto"><span >ECGAI</span></a></h1>
             </div>
-            <nav class="main-nav float-right d-none d-lg-block">
-               <ul>
-                  <li><a href="#intro">Introduction</a></li>
-                  <li><a href="#services">Our Services</a></li>
-                  <li><a href="#software">Software</a></li>
-                  <li><a href="#work">Our Work</a></li>
-                  <li class="active"><a href="#join">Join Us!</a></li>
-               </ul>
-            </nav>
+        
+            <nav class="navbar float-right navbar-expand-lg navbar-dark primary-color">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                 <ul class="navbar-nav">
+                   <li class="nav-item active">
+                     <a class="nav-link" href="#">Introduction <span class="sr-only">(current)</span></a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#diagnostics">Our Services</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#software">Software</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link " href="#work">Our Work</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link selected" href="#contact">Join Us!</a>
+                   </li>
+                 </ul>
+               </div>
+             </nav>
             <!-- .main-nav -->
          </div>
       </header>
@@ -42,7 +59,7 @@
          <div class="container ">
             <div class="row justify-content-center align-self-center">
                <div class="col-md-8 intro-info order-md-first order-last">
-                  <h2>Welcome to <span>ECGAI</span></h2>
+                  <h2>Welcome to <span class="outline">ECGAI</span></h2>
                   <div class="intro-line">
                      <p>Assistive Measurement and Diagnostics of Echocardiograms <br>
                         Using Deep learning Neural Networks.
@@ -178,33 +195,38 @@
          <p>
             * Computing power and equivalent understanding of thousands of cardiologists.
          </p>
-         <img class="img-responsive" alt="" width="150px;" src="assets/images/4.png">
+         <img id="software" class="img-responsive" alt="" width="150px;" src="assets/images/4.png">
          <h2 class="square-heading-two text-center">We License Our Software</h2>
          <div class="container d-flex h-100">
             <div class="row justify-content-center align-self-center">
                <div class="col-lg-4 col-xs-12 text-center">
-                  <img src="assets/images/1.png" class="icon-img img-responsive" />
-                  <h2 class="head-text">On Doctor’s Side</h2>
+                  <img src="assets/images/5.png" class="icon-img img-responsive" />
+                  <h2 class="head-text">Medical</h2>
                   <p>
-                     * Dependent on doctor’s
-                     availability
+                     * SaaS model licences to
+                     Hospitals, Medical Groups,
+                     Radiology Firms.
                   </p>
-                  <p>* Limited to Doctor’s experience
-                     as a practicing cardiologist
-                  </p>
-               </div>
-               <div class="col-lg-4 col-xs-12 text-center">
-                  <img src="assets/images/2.png" class="icon-img img-responsive" />
-                  <h2 class="head-text">On Stats Side</h2>
-                  <p>* Innacurate - prone to false
-                     negatives and positives.
+                  <p>* SaaS model for access to
+                     software  $5 a scan.
                   </p>
                </div>
                <div class="col-lg-4 col-xs-12 text-center">
-                  <img src="assets/images/3.png" class="icon-img img-responsive" />
-                  <h2 class="head-text">On Time Side</h2>
-                  <p>* Time Consuming</p>
-                  <p></p>
+                  <img src="assets/images/1.png" class="icon-img img-responsive" />
+                  <h2 class="head-text">Technical</h2>
+                  <p>Doctor’s save time by quickly
+                     ruling out normalized echos
+                     and instantly verifying
+                     measurements.
+                  </p>
+               </div>
+               <div class="col-lg-4 col-xs-12 text-center">
+                  <img src="assets/images/7.png" class="icon-img img-responsive" />
+                  <h2 class="head-text">Technical</h2>
+                  <p>* Every additional study
+                     improves our algorith.</p>
+                  <p>* Infinitely scalable around the
+                     world.</p>
                </div>
             </div>
          </div>
@@ -296,10 +318,9 @@
          </div>
        
       </div>
-      <div style="width:100%;text-align: center; margin-top:150px;">
+      <div id="work"style="width:100%;text-align: center; margin-top:150px;">
          <h1>Our Work</h1>
-         <div class="view-para"><a class="view-all" href="#">View All<img src="assets/images/right_mark.png"></a></div>
-         <div class="text-center paddingLeft15px"><a class=" btn-text">Try our Free Demo of our software</a></div>
+         <div class="view-para"><a class="view-all" href="#">View All &nbsp;<img src="assets/images/right_mark.png"></a></div>
 
          <div style="width:100%;text-align: center;">
             <div style="width:100%;text-align: center;">
@@ -318,15 +339,16 @@
                    <div id="items-control"> </div>
                  </div>
                </div>
-               
-               </div>
+               <h1 class=" paddingLeft15px"><button class="btn btn-pri" type="button">Try our Free Demo of our software</button></div>
+
+               </h1>
          </div>
          
       </div>
       </main>
       <!-- #problem -->
       <div id="diagnostics" class="clearfix">
-         <div class="container d-flex h-100 m-40">
+         <div id="contact" class="container d-flex h-100 m-40">
             <div class="row justify-content-center align-self-center">
                <div class="col-md-6 problem-info ">
                   <h2 class="square-title">Seeking $1.5M in Seed Funding
